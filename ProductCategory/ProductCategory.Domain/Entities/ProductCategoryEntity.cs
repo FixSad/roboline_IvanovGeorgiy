@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProductCategory.Domain.Entities
 {
-    internal class ProductCategoryEntity
+    public class ProductCategoryEntity
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }
