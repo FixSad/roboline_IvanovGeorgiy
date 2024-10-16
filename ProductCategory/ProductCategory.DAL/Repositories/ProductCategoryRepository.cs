@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ProductCategory.DAL.Interfaces;
+﻿using ProductCategory.DAL.Interfaces;
 using ProductCategory.Domain.Entities;
 
 namespace ProductCategory.DAL.Repositories

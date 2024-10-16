@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProductCategory.Domain.Enums
+﻿namespace ProductCategory.Domain.Enums
 {
     public enum StatusCode
     {
+        CategoryAlreadyExists = 1,
+        CategoryNotFound = 2,
+
         Success = 200,
         InternalServerError = 500,
     }
