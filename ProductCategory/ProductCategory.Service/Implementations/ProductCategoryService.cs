@@ -117,7 +117,7 @@ namespace ProductCategory.Service.Implementations
             }
             catch(Exception ex)
             {
-                _logger.LogError(ex, $"[LOG Error] [ProductCategoryService.GetAll]: {ex.Message}");
+                _logger.LogError(ex, $"[ERROR LOG] [ProductCategoryService.GetAll]: {ex.Message}");
                 return null;
             }
         }

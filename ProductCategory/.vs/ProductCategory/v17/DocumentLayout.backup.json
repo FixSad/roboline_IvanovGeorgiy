@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B45515B-29CD-4685-B9FE-B16F63FDFC7B}|ProductCategory.Service\\ProductCategory.Service.csproj|d:\\projects\\roboline\\roboline_ivanovgeorgiy\\productcategory\\productcategory.service\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B45515B-29CD-4685-B9FE-B16F63FDFC7B}|ProductCategory.Service\\ProductCategory.Service.csproj|solutionrelative:productcategory.service\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B45515B-29CD-4685-B9FE-B16F63FDFC7B}|ProductCategory.Service\\ProductCategory.Service.csproj|d:\\projects\\roboline\\roboline_ivanovgeorgiy\\productcategory\\productcategory.service\\implementations\\productcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B45515B-29CD-4685-B9FE-B16F63FDFC7B}|ProductCategory.Service\\ProductCategory.Service.csproj|solutionrelative:productcategory.service\\implementations\\productcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F73B8A-F687-4481-9EF2-0ED6A34D2E2F}|ProductCategory\\ProductCategory.csproj|d:\\projects\\roboline\\roboline_ivanovgeorgiy\\productcategory\\productcategory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F73B8A-F687-4481-9EF2-0ED6A34D2E2F}|ProductCategory\\ProductCategory.csproj|solutionrelative:productcategory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B45515B-29CD-4685-B9FE-B16F63FDFC7B}|ProductCategory.Service\\ProductCategory.Service.csproj|d:\\projects\\roboline\\roboline_ivanovgeorgiy\\productcategory\\productcategory.service\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B45515B-29CD-4685-B9FE-B16F63FDFC7B}|ProductCategory.Service\\ProductCategory.Service.csproj|solutionrelative:productcategory.service\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B45515B-29CD-4685-B9FE-B16F63FDFC7B}|ProductCategory.Service\\ProductCategory.Service.csproj|d:\\projects\\roboline\\roboline_ivanovgeorgiy\\productcategory\\productcategory.service\\interfaces\\iproductcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B45515B-29CD-4685-B9FE-B16F63FDFC7B}|ProductCategory.Service\\ProductCategory.Service.csproj|solutionrelative:productcategory.service\\interfaces\\iproductcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06C86BC6-586C-4F99-8C2E-15ACBA6EF786}|ProductCategory.Domain\\ProductCategory.Domain.csproj|d:\\projects\\roboline\\roboline_ivanovgeorgiy\\productcategory\\productcategory.domain\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06C86BC6-586C-4F99-8C2E-15ACBA6EF786}|ProductCategory.Domain\\ProductCategory.Domain.csproj|solutionrelative:productcategory.domain\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06C86BC6-586C-4F99-8C2E-15ACBA6EF786}|ProductCategory.Domain\\ProductCategory.Domain.csproj|d:\\projects\\roboline\\roboline_ivanovgeorgiy\\productcategory\\productcategory.domain\\viewmodels\\productcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06C86BC6-586C-4F99-8C2E-15ACBA6EF786}|ProductCategory.Domain\\ProductCategory.Domain.csproj|solutionrelative:productcategory.domain\\viewmodels\\productcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F73B8A-F687-4481-9EF2-0ED6A34D2E2F}|ProductCategory\\ProductCategory.csproj|d:\\projects\\roboline\\roboline_ivanovgeorgiy\\productcategory\\productcategory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F73B8A-F687-4481-9EF2-0ED6A34D2E2F}|ProductCategory\\ProductCategory.csproj|solutionrelative:productcategory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1F73B8A-F687-4481-9EF2-0ED6A34D2E2F}|ProductCategory\\ProductCategory.csproj|d:\\projects\\roboline\\roboline_ivanovgeorgiy\\productcategory\\productcategory\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F73B8A-F687-4481-9EF2-0ED6A34D2E2F}|ProductCategory\\ProductCategory.csproj|solutionrelative:productcategory\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,77 +33,86 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 232,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 278,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductViewModel.cs",
-              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Domain\\ViewModels\\ProductViewModel.cs",
-              "RelativeDocumentMoniker": "ProductCategory.Domain\\ViewModels\\ProductViewModel.cs",
-              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Domain\\ViewModels\\ProductViewModel.cs",
-              "RelativeToolTip": "ProductCategory.Domain\\ViewModels\\ProductViewModel.cs",
+              "DocumentIndex": 4,
+              "Title": "IProductCategoryService.cs",
+              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Interfaces\\IProductCategoryService.cs",
+              "RelativeDocumentMoniker": "ProductCategory.Service\\Interfaces\\IProductCategoryService.cs",
+              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Interfaces\\IProductCategoryService.cs",
+              "RelativeToolTip": "ProductCategory.Service\\Interfaces\\IProductCategoryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T19:22:36.237Z",
+              "WhenOpened": "2024-10-16T22:40:40.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductCategoryViewModel.cs",
-              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Domain\\ViewModels\\ProductCategoryViewModel.cs",
-              "RelativeDocumentMoniker": "ProductCategory.Domain\\ViewModels\\ProductCategoryViewModel.cs",
-              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Domain\\ViewModels\\ProductCategoryViewModel.cs",
-              "RelativeToolTip": "ProductCategory.Domain\\ViewModels\\ProductCategoryViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "ProductCategory.Service\\Interfaces\\IProductService.cs",
+              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "ProductCategory.Service\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T19:22:35.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory\\Program.cs",
-              "RelativeDocumentMoniker": "ProductCategory\\Program.cs",
-              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory\\Program.cs",
-              "RelativeToolTip": "ProductCategory\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T18:32:51.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IProductCategoryService.cs",
-              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Interfaces\\IProductCategoryService.cs",
-              "RelativeDocumentMoniker": "ProductCategory.Service\\Interfaces\\IProductCategoryService.cs",
-              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Interfaces\\IProductCategoryService.cs*",
-              "RelativeToolTip": "ProductCategory.Service\\Interfaces\\IProductCategoryService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T18:25:22.376Z",
+              "WhenOpened": "2024-10-16T22:35:56.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductCategoryService.cs",
-              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Implementations\\ProductCategoryService.cs",
-              "RelativeDocumentMoniker": "ProductCategory.Service\\Implementations\\ProductCategoryService.cs",
-              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Implementations\\ProductCategoryService.cs*",
-              "RelativeToolTip": "ProductCategory.Service\\Implementations\\ProductCategoryService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKQAAAAFAAAAAAAAAA==",
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Implementations\\ProductService.cs",
+              "RelativeDocumentMoniker": "ProductCategory.Service\\Implementations\\ProductService.cs",
+              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Implementations\\ProductService.cs*",
+              "RelativeToolTip": "ProductCategory.Service\\Implementations\\ProductService.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T18:25:04.426Z",
+              "WhenOpened": "2024-10-16T22:31:50.234Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductCategoryService.cs",
+              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Implementations\\ProductCategoryService.cs",
+              "RelativeDocumentMoniker": "ProductCategory.Service\\Implementations\\ProductCategoryService.cs",
+              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\Implementations\\ProductCategoryService.cs",
+              "RelativeToolTip": "ProductCategory.Service\\Implementations\\ProductCategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T22:31:38.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory\\Program.cs",
+              "RelativeDocumentMoniker": "ProductCategory\\Program.cs",
+              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory\\Program.cs",
+              "RelativeToolTip": "ProductCategory\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T22:30:22.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProductCategory\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProductCategory\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T22:30:44.55Z",
+              "EditorCaption": ""
             }
           ]
         }

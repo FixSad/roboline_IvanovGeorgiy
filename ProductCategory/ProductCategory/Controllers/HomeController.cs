@@ -9,10 +9,13 @@ namespace ProductCategory.Controllers
     public class HomeController : Controller
     {
         private IProductCategoryService _productCategoryService;
+        private IProductService _productService;
 
-        public HomeController(IProductCategoryService productCategoryService)
+
+        public HomeController(IProductCategoryService productCategoryService, IProductService productService)
         {
             _productCategoryService = productCategoryService;
+            _productService = productService;
         }
 
         public async Task<IActionResult> Index()
@@ -20,17 +23,6 @@ namespace ProductCategory.Controllers
             var categories = await _productCategoryService.GetAll();
             ViewBag.Categories = new SelectList(categories, "Id", "Name");
             return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

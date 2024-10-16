@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using ProductCategory.DAL;
 using ProductCategory.DAL.Interfaces;
 using ProductCategory.DAL.Repositories;
@@ -12,6 +13,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IBaseRepository<ProductCategoryEntity>, ProductCategoryRepository>();
 builder.Services.AddScoped<IProductCategoryService, ProductCategoryService>();
+
+builder.Services.AddScoped<IBaseRepository<ProductEntity>, ProductRepository>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var connectionString = builder.Configuration.GetConnectionString("SQLite");
 builder.Services.AddDbContext<ApplicationDBContext>(options =>
