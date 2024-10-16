@@ -1007,6 +1007,20 @@
         "runtime": {
           "bin/placeholder/ProductCategory.Domain.dll": {}
         }
+      },
+      "ProductCategory.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ProductCategory.DAL": "1.0.0",
+          "ProductCategory.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProductCategory.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductCategory.Service.dll": {}
+        }
       }
     }
   },
@@ -2445,6 +2459,11 @@
       "type": "project",
       "path": "../ProductCategory.Domain/ProductCategory.Domain.csproj",
       "msbuildProject": "../ProductCategory.Domain/ProductCategory.Domain.csproj"
+    },
+    "ProductCategory.Service/1.0.0": {
+      "type": "project",
+      "path": "../ProductCategory.Service/ProductCategory.Service.csproj",
+      "msbuildProject": "../ProductCategory.Service/ProductCategory.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2452,7 +2471,8 @@
       "Microsoft.EntityFrameworkCore >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.10",
-      "ProductCategory.DAL >= 1.0.0"
+      "ProductCategory.DAL >= 1.0.0",
+      "ProductCategory.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2492,6 +2512,9 @@
           "projectReferences": {
             "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.DAL\\ProductCategory.DAL.csproj": {
               "projectPath": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.DAL\\ProductCategory.DAL.csproj"
+            },
+            "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\ProductCategory.Service.csproj": {
+              "projectPath": "D:\\projects\\roboline\\roboline_IvanovGeorgiy\\ProductCategory\\ProductCategory.Service\\ProductCategory.Service.csproj"
             }
           }
         }

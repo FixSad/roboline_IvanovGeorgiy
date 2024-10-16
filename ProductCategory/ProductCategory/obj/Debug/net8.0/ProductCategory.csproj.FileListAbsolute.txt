@@ -136,3 +136,5 @@ D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\
 D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Debug\net8.0\ProductCategory.Service.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Debug\net8.0\ProductCategory.Service.pdb

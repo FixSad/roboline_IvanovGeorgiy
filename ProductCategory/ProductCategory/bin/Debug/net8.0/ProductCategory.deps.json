@@ -11,7 +11,8 @@
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.10",
-          "ProductCategory.DAL": "1.0.0"
+          "ProductCategory.DAL": "1.0.0",
+          "ProductCategory.Service": "1.0.0"
         },
         "runtime": {
           "ProductCategory.dll": {}
@@ -684,6 +685,18 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "ProductCategory.Service/1.0.0": {
+        "dependencies": {
+          "ProductCategory.DAL": "1.0.0",
+          "ProductCategory.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ProductCategory.Service.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1014,6 +1027,11 @@
       "sha512": ""
     },
     "ProductCategory.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProductCategory.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

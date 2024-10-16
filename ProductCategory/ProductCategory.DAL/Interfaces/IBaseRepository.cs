@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProductCategory.DAL.Interfaces
+﻿namespace ProductCategory.DAL.Interfaces
 {
-    internal interface IBaseRepository
+    public interface IBaseRepository<T>
     {
+        Task Create(T entity);
+        Task Update(T entity);
+        Task Delete(T entity);
+        IQueryable<T> GetAll();
     }
 }

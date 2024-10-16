@@ -1,20 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ProductCategory.Models;
+using ProductCategory.Service.Interfaces;
 using System.Diagnostics;
 
 namespace ProductCategory.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private IProductCategoryService _productCategoryService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IProductCategoryService productCategoryService)
         {
-            _logger = logger;
+            _productCategoryService = productCategoryService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            var categories = await _productCategoryService.GetAll();
+            ViewBag.Categories = new SelectList(categories, "Id", "Name");
             return View();
         }
 

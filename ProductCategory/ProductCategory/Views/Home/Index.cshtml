@@ -4,6 +4,13 @@
 
 <a type="button" id="fire" class="btn btn-success">Success</a>
 
+<ul>
+    @foreach (var category in ViewBag.Categories)
+    {
+        <li>@category.Text</li>
+    }
+</ul>
+
 @section Scripts
 {
     <script>
