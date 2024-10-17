@@ -67,25 +67,13 @@ namespace ProductCategory.Service.Implementations
         }
 
         // Удаление категории
-        public async Task<IBaseResponse<ProductCategoryEntity>> Delete(ProductCategoryViewModel productCategory)
+        public async Task<IBaseResponse<ProductCategoryEntity>> Delete(ProductCategoryEntity productCategory)
         {
             try
             {
                 _logger.LogInformation($"[LOG] Request to delete the ProductCategory...");
-                var tmp = await _categoryRepository.GetAll().Where(x => x.Name.Equals(productCategory.Name) 
-                    && x.Description.Equals(productCategory.Description)).FirstOrDefaultAsync();
 
-                if (tmp == null) 
-                {
-                    _logger.LogInformation($"[LOG] The ProductCategory not found");
-                    return new BaseResponse<ProductCategoryEntity>
-                    {
-                        Description = $"The ProductCategory not found",
-                        StatusCode = StatusCode.CategoryNotFound
-                    };
-                }
-
-                await _categoryRepository.Delete(tmp);
+                await _categoryRepository.Delete(productCategory);
                 _logger.LogInformation($"[LOG] The ProductCategory was successfully deleted");
 
                 return new BaseResponse<ProductCategoryEntity>
@@ -122,15 +110,44 @@ namespace ProductCategory.Service.Implementations
             }
         }
 
+        // Получений категории по id
+        public async Task<IBaseResponse<ProductCategoryEntity>> GetCategory(int id)
+        {
+            try
+            {
+                _logger.LogInformation($"[LOG] Request to get ProductCategory via id...");
+                var productCategory = await _categoryRepository.GetAll().
+                    Where(x => x.Id == id).FirstOrDefaultAsync();
+
+                _logger.LogInformation($"[LOG] Request to get ProductCategory via id" +
+                    $" has been completed successfully");
+
+                return new BaseResponse<ProductCategoryEntity>
+                {
+                    Description = $"ProductCategory item has been received successfully",
+                    StatusCode = StatusCode.Success,
+                    Data = productCategory
+                };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"[ERROR LOG] [ProductCategoryService.GetAll]: {ex.Message}");
+                return new BaseResponse<ProductCategoryEntity>
+                {
+                    Description = $"{ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
+
         // Изменение категории
-        public async Task<IBaseResponse<ProductCategoryEntity>> Update(ProductCategoryViewModel oldProductCategory,
-            ProductCategoryViewModel newProductCategory)
+        public async Task<IBaseResponse<ProductCategoryEntity>> Update(ProductCategoryViewModel newProductCategory, int id)
         {
             try
             {
                 _logger.LogInformation($"[LOG] Request to update the ProductCategory...");
-                var tmp = await _categoryRepository.GetAll().Where(x => x.Name.Equals(oldProductCategory.Name)
-                    && x.Description.Equals(oldProductCategory.Description)).FirstOrDefaultAsync();
+                var tmp = await _categoryRepository.GetAll().
+                    Where(x => x.Id == id).FirstOrDefaultAsync();
 
                 if (tmp == null)
                 {
@@ -148,7 +165,8 @@ namespace ProductCategory.Service.Implementations
                     tmp.Description = newProductCategory.Description;
 
                 await _categoryRepository.Update(tmp);
-
+                _logger.LogInformation($"[LOG] Request to update ProductCategory" +
+                    $" has been completed successfully");
                 return new BaseResponse<ProductCategoryEntity>
                 {
                     Description = $"The ProductCategory was successfully updated",
