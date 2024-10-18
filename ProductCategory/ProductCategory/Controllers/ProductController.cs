@@ -22,6 +22,7 @@ namespace ProductCategory.Controllers
         public async Task<IActionResult> Index()
         {
             var categories = await _productCategoryService.GetAll();
+            var products = await _productService.GetAll();
             ViewBag.Categories = new SelectList(categories, "Id", "Name");
             return View();
         }

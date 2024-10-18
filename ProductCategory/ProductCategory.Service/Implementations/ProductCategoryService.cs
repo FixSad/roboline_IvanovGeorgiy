@@ -27,8 +27,10 @@ namespace ProductCategory.Service.Implementations
             try
             {
                 _logger.LogInformation($"[LOG] Request to create the ProductCategory...");
-                var tmp = await _categoryRepository.GetAll().Where(x => x.Name.Equals(productCategory.Name)
-                    && x.Description.Equals(productCategory.Description)).FirstOrDefaultAsync();
+                var tmp = await _categoryRepository.GetAll().
+                    Where(x => x.Name.Equals(productCategory.Name) && 
+                    x.Description.Equals(productCategory.Description)).
+                    FirstOrDefaultAsync();
 
                 if (tmp != null)
                 {
@@ -117,7 +119,8 @@ namespace ProductCategory.Service.Implementations
             {
                 _logger.LogInformation($"[LOG] Request to get ProductCategory via id...");
                 var productCategory = await _categoryRepository.GetAll().
-                    Where(x => x.Id == id).FirstOrDefaultAsync();
+                    Where(x => x.Id == id).
+                    FirstOrDefaultAsync();
 
                 _logger.LogInformation($"[LOG] Request to get ProductCategory via id" +
                     $" has been completed successfully");
@@ -131,7 +134,7 @@ namespace ProductCategory.Service.Implementations
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"[ERROR LOG] [ProductCategoryService.GetAll]: {ex.Message}");
+                _logger.LogError(ex, $"[ERROR LOG] [ProductCategoryService.GetCategory]: {ex.Message}");
                 return new BaseResponse<ProductCategoryEntity>
                 {
                     Description = $"{ex.Message}",
@@ -147,7 +150,8 @@ namespace ProductCategory.Service.Implementations
             {
                 _logger.LogInformation($"[LOG] Request to update the ProductCategory...");
                 var tmp = await _categoryRepository.GetAll().
-                    Where(x => x.Id == id).FirstOrDefaultAsync();
+                    Where(x => x.Id == id).
+                    FirstOrDefaultAsync();
 
                 if (tmp == null)
                 {

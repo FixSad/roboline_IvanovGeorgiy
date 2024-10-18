@@ -7,9 +7,9 @@ namespace ProductCategory.Service.Interfaces
     public interface IProductService
     {
         Task<IEnumerable<ProductEntity>> GetAll();
-        Task<IBaseResponse<ProductEntity>> Delete(ProductViewModel productCategory);
-        Task<IBaseResponse<ProductEntity>> Update(ProductViewModel oldProduct,
-            ProductViewModel newProduct);
+        Task<IBaseResponse<ProductEntity>> Delete(ProductEntity productCategory);
+        Task<IBaseResponse<ProductEntity>> Update(ProductViewModel newProduct, int id);
         Task<IBaseResponse<ProductEntity>> Create(ProductViewModel productCategory);
+        Task<IBaseResponse<ProductEntity>> GetProduct(int id);
     }
 }

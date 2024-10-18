@@ -1,15 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using ProductCategory.DAL;
 using ProductCategory.DAL.Interfaces;
 using ProductCategory.DAL.Repositories;
 using ProductCategory.Domain.Entities;
 using ProductCategory.Service.Implementations;
 using ProductCategory.Service.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.OpenApi;
-using ProductCategory.Controllers;
-using Newtonsoft.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,8 +15,6 @@ builder.Services.AddScoped<IProductCategoryService, ProductCategoryService>();
 
 builder.Services.AddScoped<IBaseRepository<ProductEntity>, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
-
-
 
 var connectionString = builder.Configuration.GetConnectionString("SQLite");
 builder.Services.AddDbContext<ApplicationDBContext>(options =>
@@ -58,12 +51,4 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Product}/{action=Index}/{id?}");
 
-//app.MapProductCategoryEntityEndpoints();
-
-//app.MapProductCategoryEntityEndpoints();
-
-//app.ProductCategoryApiController();
-
 app.Run();
-
-
