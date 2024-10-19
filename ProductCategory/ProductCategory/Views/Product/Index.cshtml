@@ -1,45 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@{
+    ViewData["Title"] = "Product";
 }
 
-<a type="button" id="fire" class="btn btn-success">Success</a>
+<h1>Product</h1>
 
-<ul>
-    @foreach (var category in ViewBag.Categories)
-    {
-        <li>@category.Text</li>
-    }
-</ul>
-
-<form id="dataForm" method="post">
-    <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" name="Name" required>
-    </div>
-    <div class="form-group">
-        <label for="description">Description:</label>
-        <input type="text" class="form-control" id="description" name="Description" required>
-    </div>
-    <button id="createFile" type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-@section Scripts
-{
-    <script>
-        $('#createFile').on('click', function (e) {
-            console.log($('#dataForm').serialize());
-            e.preventDefault();
-            $.ajax({
-                type: 'POST',
-                url: '@Url.Action("CreateCategory", "Product")',
-                data: $('#dataForm').serialize(),
-                success: function (response) {
-                    alert(response.description);
-                },
-                error: function (response) {
-                    alert(response.description);
-                }
-            })
-        });
-    </script>
-}
