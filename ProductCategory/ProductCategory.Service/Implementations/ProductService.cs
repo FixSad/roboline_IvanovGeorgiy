@@ -6,6 +6,8 @@ using ProductCategory.Domain.Enums;
 using ProductCategory.Domain.Response;
 using ProductCategory.Domain.ViewModels;
 using ProductCategory.Service.Interfaces;
+using System.Diagnostics;
+using System.Xml.Linq;
 
 namespace ProductCategory.Service.Implementations
 {
@@ -44,7 +46,7 @@ namespace ProductCategory.Service.Implementations
                 }
 
                 var category = await _categoryRepository.GetAll().
-                    Where(x => x.Id.Equals(product.Category)).
+                    Where(x => x.Name.Equals(product.Category)).
                     FirstOrDefaultAsync();
 
                 var tmpProduct = new ProductEntity()
@@ -165,35 +167,15 @@ namespace ProductCategory.Service.Implementations
             }
         }
 
-        // Изменение продукта
         public async Task<IBaseResponse<ProductEntity>> Update(ProductViewModel newProduct, int id)
         {
             {
                 try
                 {
                     _logger.LogInformation($"[LOG] Request to update the Product...");
-                    var tmp = await _productRepository.GetAll().
-                        Where(x => x.Id == id).
-                        Select(x => new ProductEntity()
-                        {
-                            Id = x.Id,
-                            Name = x.Name,
-                            Description = x.Description,
-                            Category = x.Category
-                        }).FirstOrDefaultAsync();
 
-                    if (tmp == null)
-                    {
-                        _logger.LogInformation($"[LOG] The Product not found");
-                        return new BaseResponse<ProductEntity>
-                        {
-                            Description = $"The Product not found",
-                            StatusCode = StatusCode.CategoryNotFound
-                        };
-                    }
-
-                    var category = await _categoryRepository.GetAll().
-                        Where(x => x.Id == newProduct.Category).
+                    var finalCategory = await _categoryRepository.GetAll().
+                        Where(x => x.Name == newProduct.Category).
                         Select(x => new ProductCategoryEntity()
                         {
                             Id = x.Id,
@@ -201,16 +183,27 @@ namespace ProductCategory.Service.Implementations
                             Description = x.Description
                         }).FirstOrDefaultAsync();
 
-                    if (!tmp.Name.Equals(newProduct.Name))
-                        tmp.Name = newProduct.Name;
-                    if (!tmp.Description.Equals(newProduct.Description))
-                        tmp.Description = newProduct.Description;
-                    if (tmp.Price != newProduct.Price)
-                        tmp.Price = newProduct.Price;
-                    if (tmp.Category.Id != newProduct.Category)
-                        tmp.Category = category;
+                    var file = await _productRepository.GetAll().
+                        Where(x => x.Name == newProduct.Category).
+                        Select(x => new ProductEntity()
+                        {
+                            Id = x.Id,
+                            Name = x.Name,
+                            Description = x.Description,
+                            Price = x.Price,
+                            Category = finalCategory
+                        }).FirstOrDefaultAsync();
 
-                    await _productRepository.Update(tmp);
+                    if (!file.Name.Equals(newProduct.Name))
+                        file.Name = newProduct.Name;
+                    if (!file.Description.Equals(newProduct.Description))
+                        file.Description = newProduct.Description;
+                    if (file.Price != newProduct.Price)
+                        file.Price = newProduct.Price;
+                    /*if (tmp.Category.Id != newProduct.Category)
+                        tmp.Category = category;
+                    */
+                    await _productRepository.Update(file);
 
                     return new BaseResponse<ProductEntity>
                     {

@@ -10,20 +10,15 @@ namespace ProductCategory.Controllers
     public class ProductCategoryController : Controller
     {
         private IProductCategoryService _productCategoryService;
-        private IProductService _productService;
 
-
-        public ProductCategoryController(IProductCategoryService productCategoryService, IProductService productService)
+        public ProductCategoryController(IProductCategoryService productCategoryService)
         {
             _productCategoryService = productCategoryService;
-            _productService = productService;
         }
 
         public async Task<IActionResult> Index()
         {
             var categories = await _productCategoryService.GetAll();
-            var products = await _productService.GetAll();
-            ViewBag.Categories = new SelectList(categories, "Id", "Name");
             return View(categories);
         }
         

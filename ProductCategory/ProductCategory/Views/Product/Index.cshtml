@@ -1,7 +1,171 @@
-﻿
+﻿@using ProductCategory.Domain.Entities;
 @{
     ViewData["Title"] = "Product";
 }
 
+@model IEnumerable<ProductCategory.Domain.Entities.ProductEntity>
+
 <h1>Product</h1>
 
+<div class="container mt-5">
+
+    <form id="dataForm" method="post" class="needs-validation" novalidate>
+        <div class="form-group mb-1">
+            <label for="name">Name:</label>
+            <input name="Name" type="text" class="form-control"
+                   id="name" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please provide a valid name.
+            </div>
+        </div>
+        <div class="form-group mb-1">
+            <label for="description">Description:</label>
+            <input name="Description" class="form-control"
+                   type="text" id="description" required />
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please provide a valid description.
+            </div>
+        </div>
+        <div class="form-group mb-1">
+            <label for="price">Price:</label>
+            <input name="Price" class="form-control"
+                   type="number" id="price" required />
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please provide a valid price.
+            </div>
+        </div>
+        <div class="form-group mb-1">
+            <label for="category">Category:</label>
+            <select  name="Category" id="selectCategory"
+                     class="form-select selectpicker" data-live-search="true" required>
+                @foreach (var category in ViewBag.Categories)
+                {
+                    <option data-tokens="@category.Text">@category.Text</option>
+                }
+            </select>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <button id="createFile" type="submit" class="btn btn-primary" onclick="CreateProduct()">Submit</button>
+    </form>
+
+    <h2 class="mt-5">Product Table</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="dataTableBody">
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>
+                        <input type="text" name="changeName" id="changeName @product.Id" value="@product.Name" />
+                    </td>
+                    <td>
+                        <input type="text" name="changeDescription" id="changeDescription @product.Id" value="@product.Description" />
+                    </td>
+                    <td>
+                        <input type="text" name="changePrice" id="changePrice @product.Id" value="@product.Price" />
+                    </td>
+                    <td>
+                        <input type="text" name="changeCategory" id="changeCategory @product.Id" value="@product.Category.Name" />
+                    </td>
+                    <td>
+                        <button class="btn btn-warning" onclick="changeProduct(@product.Id)">
+                            Edit
+                        </button>
+                        <button class="btn btn-danger" onclick="deleteProduct(@product.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts{
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+        function CreateProduct() {
+            console.log($('#dataForm').serialize());
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("CreateProduct", "Product")',
+                data: $('#dataForm').serialize(),
+                success: function (response) {
+                    alert(response.description);
+                },
+                error: function (response) {
+                    alert(response.responseJSON.description);
+                }
+            })
+        };
+
+        $("#dataForm").submit(function (e) {
+            e.preventDefault();
+        });
+
+
+        function deleteProduct(id) {
+            $.ajax({
+                type: 'DELETE',
+                url: '@Url.Action("DeleteProduct", "Product")',
+                data: { id: id },
+                success: function (response) {
+                    alert(response.description);
+                },
+                error: function (response) {
+                    alert(response.responseJSON.description);
+                }
+            })
+        }
+
+        function changeProduct(id){
+            var final_name = document.getElementById("changeName " + id).value;
+            var description = document.getElementById("changeDescription " + id).value;
+            var price = document.getElementById("changePrice " + id).value;
+            var category = document.getElementById("changeCategory " + id).value;
+            $.ajax({
+                type: 'DELETE',
+                url: '@Url.Action("ChangeProduct", "Product")',
+                data: { id: id, name: final_name, description: description, price: price, category: category },
+                success: function (response) {
+                    alert(response.description);
+                },
+                error: function (response) {
+                    alert(response.responseJSON.description);
+                }
+            })
+        }
+    </script>
+}

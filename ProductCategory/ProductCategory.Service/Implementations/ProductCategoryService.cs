@@ -28,9 +28,10 @@ namespace ProductCategory.Service.Implementations
             {
                 _logger.LogInformation($"[LOG] Request to create the ProductCategory...");
                 var tmp = await _categoryRepository.GetAll().
-                    Where(x => x.Name.Equals(productCategory.Name) && 
-                    x.Description.Equals(productCategory.Description)).
+                    Where(x => x.Name.Equals(productCategory.Name)).
                     FirstOrDefaultAsync();
+
+
 
                 if (tmp != null)
                 {
@@ -163,7 +164,21 @@ namespace ProductCategory.Service.Implementations
                     };
                 }
 
-                if(!tmp.Name.Equals(newProductCategory.Name))
+                var valid = await _categoryRepository.GetAll().
+                    Where(x => x.Name == newProductCategory.Name).
+                    FirstOrDefaultAsync();
+
+                if (valid != null)
+                {
+                    _logger.LogInformation($"[LOG] The ProductCategory not found");
+                    return new BaseResponse<ProductCategoryEntity>
+                    {
+                        Description = $"The ProductCategory already exists",
+                        StatusCode = StatusCode.CategoryAlreadyExists
+                    };
+                }
+
+                if (!tmp.Name.Equals(newProductCategory.Name))
                     tmp.Name = newProductCategory.Name;
                 if(!tmp.Description.Equals(newProductCategory.Description))
                     tmp.Description = newProductCategory.Description;
