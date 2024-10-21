@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using ProductCategory.Domain.ViewModels;
-using ProductCategory.Models;
 using ProductCategory.Service.Interfaces;
-using System.Diagnostics;
 
 namespace ProductCategory.Controllers
 {

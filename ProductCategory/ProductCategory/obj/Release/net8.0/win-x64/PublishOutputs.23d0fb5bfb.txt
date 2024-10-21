@@ -1,0 +1,9 @@
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Release\net8.0\win-x64\publish\appsettings.Development.json
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Release\net8.0\win-x64\publish\appsettings.json
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Release\net8.0\win-x64\publish\ProductCategory.pdb
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Release\net8.0\win-x64\publish\aspnetcorev2_inprocess.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Release\net8.0\win-x64\publish\e_sqlite3.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Release\net8.0\win-x64\publish\ProductCategory.DAL.pdb
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Release\net8.0\win-x64\publish\ProductCategory.Service.pdb
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Release\net8.0\win-x64\publish\ProductCategory.Domain.pdb
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory\bin\Release\net8.0\win-x64\publish\ProductCategory.exe

@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using ProductCategory.Domain.Entities;
 using ProductCategory.Domain.ViewModels;
 using ProductCategory.Service.Interfaces;
 
@@ -17,6 +16,7 @@ namespace ProductCategory.Controllers
             _productService = productService;
         }
 
+        // Главная страница
         public async Task<IActionResult> Index()
         {
             var categories = await _productCategoryService.GetAll();
@@ -60,7 +60,6 @@ namespace ProductCategory.Controllers
                 return BadRequest(new { description = "Enter the correct data type(decimal, int) for Price" });
             }
             
-
             ProductViewModel product = new ProductViewModel()
             {
                 Name = name,

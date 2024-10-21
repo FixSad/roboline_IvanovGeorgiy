@@ -22,7 +22,7 @@ namespace ProductCategory.Controllers
             return Ok(products);
         }
 
-        // GET: api/ProductApiController/5
+        // GET: api/ProductApiController/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductViewModel>> Get(int id)
         {
@@ -32,7 +32,7 @@ namespace ProductCategory.Controllers
             return BadRequest(new { description = response.Description });
         }
 
-        // PUT: api/ProductApiController/5
+        // PUT: api/ProductApiController/{id}
         [HttpPut("{id}")]
         public async Task<ActionResult<ProductEntity>> Put(int id, ProductViewModel product)
         {
@@ -52,7 +52,7 @@ namespace ProductCategory.Controllers
             return BadRequest(new { description = response.Description });
         }
 
-        // DELETE: api/ProductApiController/5
+        // DELETE: api/ProductApiController/{id}
         [HttpDelete("{id}")]
         public async Task<ActionResult<ProductEntity>> Delete(int id)
         {

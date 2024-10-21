@@ -32,7 +32,7 @@ namespace ProductCategory.Service.Implementations
                     FirstOrDefaultAsync();
 
 
-
+                // Проверка на существование
                 if (tmp != null)
                 {
                     _logger.LogInformation($"[LOG] The ProductCategory already exists");

@@ -1,0 +1,16 @@
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\bin\Release\net8.0\win-x64\ProductCategory.DAL.deps.json
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\bin\Release\net8.0\win-x64\ProductCategory.DAL.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\bin\Release\net8.0\win-x64\ProductCategory.DAL.pdb
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\bin\Release\net8.0\win-x64\ProductCategory.Domain.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\bin\Release\net8.0\win-x64\ProductCategory.Domain.pdb
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\ProductCategory.DAL.csproj.AssemblyReference.cache
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\ProductCategory.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\ProductCategory.DAL.AssemblyInfoInputs.cache
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\ProductCategory.DAL.AssemblyInfo.cs
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\ProductCategory.DAL.csproj.CoreCompileInputs.cache
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\ProductCategory.DAL.sourcelink.json
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\ProductC.03377FD1.Up2Date
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\ProductCategory.DAL.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\refint\ProductCategory.DAL.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\ProductCategory.DAL.pdb
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.DAL\obj\Release\net8.0\win-x64\ref\ProductCategory.DAL.dll

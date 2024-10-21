@@ -1,0 +1,12 @@
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\bin\Release\net8.0\win-x64\ProductCategory.Domain.deps.json
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\bin\Release\net8.0\win-x64\ProductCategory.Domain.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\bin\Release\net8.0\win-x64\ProductCategory.Domain.pdb
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\obj\Release\net8.0\win-x64\ProductCategory.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\obj\Release\net8.0\win-x64\ProductCategory.Domain.AssemblyInfoInputs.cache
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\obj\Release\net8.0\win-x64\ProductCategory.Domain.AssemblyInfo.cs
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\obj\Release\net8.0\win-x64\ProductCategory.Domain.csproj.CoreCompileInputs.cache
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\obj\Release\net8.0\win-x64\ProductCategory.Domain.sourcelink.json
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\obj\Release\net8.0\win-x64\ProductCategory.Domain.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\obj\Release\net8.0\win-x64\refint\ProductCategory.Domain.dll
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\obj\Release\net8.0\win-x64\ProductCategory.Domain.pdb
+D:\projects\roboline\roboline_IvanovGeorgiy\ProductCategory\ProductCategory.Domain\obj\Release\net8.0\win-x64\ref\ProductCategory.Domain.dll

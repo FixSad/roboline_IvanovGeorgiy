@@ -167,6 +167,7 @@ namespace ProductCategory.Service.Implementations
             }
         }
 
+        // Изменение продукта
         public async Task<IBaseResponse<ProductEntity>> Update(ProductViewModel newProduct, int id)
         {
             {
